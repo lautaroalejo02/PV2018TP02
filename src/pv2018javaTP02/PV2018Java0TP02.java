@@ -53,7 +53,7 @@ public class PV2018Java0TP02 {
                 devolverEdadEnSemanas();
                 main(null);
             case 5:
-                obtenerEstacion();
+                obtenerEstacion(); //siguiendo este punto
                 main(null);
             case 6:
                 obtenerDomingos();
@@ -94,10 +94,10 @@ public class PV2018Java0TP02 {
         obtFecha.devolverLaEdadEnSemana();
     }
 
-    public static void obtenerEstacion() {
+    public static void obtenerEstacion() { //siguiendo este punto
         Fecha obtFecha = new Fecha();
-        obtFecha.ingresarFec();
-        System.out.println(obtFecha.obtEstacion());
+        obtFecha.ingresarFec();//se ingresa la fecha y se setea un String con la fecha agregada
+        System.out.println(obtFecha.obtEstacion()); //devuelve un String, pero nunca se pide la fecha ingresada
     }
 
     public static void obtenerDomingos() {
